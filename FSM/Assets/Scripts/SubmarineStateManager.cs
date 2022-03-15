@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class SubmarineStateManager : MonoBehaviour
 {
@@ -9,10 +10,12 @@ public class SubmarineStateManager : MonoBehaviour
     SubmarineBaseState CurrentState;
     SubmarineHuntingState HuntingState = new SubmarineHuntingState();
     SubmarineIdleState IdleState = new SubmarineIdleState();
-
+    public int detectionRadius = 5;
+    public LayerMask lm;
+    public NavMeshAgent agent;
     void Start()
     {
-        CurrentState = IdleState;
+        CurrentState = HuntingState;
         CurrentState.EnterState(this);
     }
 

@@ -245,8 +245,8 @@ GameObject:
   m_Component:
   - component: {fileID: 792991637}
   - component: {fileID: 792991636}
-  - component: {fileID: 792991634}
   - component: {fileID: 792991633}
+  - component: {fileID: 792991634}
   m_Layer: 0
   m_Name: SubmarineParent
   m_TagString: Untagged
@@ -285,14 +285,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 792991632}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b12488fd5b7a8ed4cba6a30fe094f9d4, type: 3}
+  m_Script: {fileID: 11500000, guid: f6732f7379be6964b9bd2b717e40cc02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   detectionRadius: 10
   lm:
     serializedVersion: 2
     m_Bits: 64
-  cam: {fileID: 956451648}
   agent: {fileID: 792991633}
 --- !u!136 &792991636
 CapsuleCollider:
