@@ -245,7 +245,6 @@ GameObject:
   m_Component:
   - component: {fileID: 792991637}
   - component: {fileID: 792991636}
-  - component: {fileID: 792991635}
   - component: {fileID: 792991634}
   - component: {fileID: 792991633}
   m_Layer: 0
@@ -295,21 +294,6 @@ MonoBehaviour:
     m_Bits: 64
   cam: {fileID: 956451648}
   agent: {fileID: 792991633}
---- !u!114 &792991635
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 792991632}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 296b25c5919d2b84fb3a33efcc401ce8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  detectionRadius: 20
-  layermask:
-    m_Bits: 64
 --- !u!136 &792991636
 CapsuleCollider:
   m_ObjectHideFlags: 0
