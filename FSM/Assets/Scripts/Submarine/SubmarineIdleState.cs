@@ -6,6 +6,7 @@ using UnityEngine.AI;
 public class SubmarineIdleState : SubmarineBaseState
 {
     public override void EnterState(SubmarineStateManager submarine) {
+        submarine.agent.speed = 2f;
     }
     public override void UpdateState(SubmarineStateManager submarine) {
         if (Input.GetMouseButtonDown(0))
