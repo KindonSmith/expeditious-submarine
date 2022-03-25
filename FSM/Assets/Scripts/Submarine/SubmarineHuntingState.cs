@@ -3,7 +3,9 @@ using UnityEngine;
 
 public class SubmarineHuntingState : SubmarineBaseState
 {
-    public override void EnterState(SubmarineStateManager submarine) { }
+    public override void EnterState(SubmarineStateManager submarine) {
+        submarine.agent.speed = 5f;
+    }
     public override void UpdateState(SubmarineStateManager submarine) {
         Ray areaRay = new Ray(submarine.transform.position, submarine.transform.forward);
         for (int i = -1; i < 2; i++)
